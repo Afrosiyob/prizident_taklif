@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/321.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.navbar-brand div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 18px;
+}
+
+.navbar-brand div span {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #113892;
+  font-size: 18px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #0b2f82;
+  height: 70px;
+}
+
+.footer p {
+  color: white;
+}
+
+.main-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  margin: 130px 0;
+}
+
+.main-section .form-section {
+  padding: 50px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+@media all and (max-width: 768px) {
+  .main-section .form-section {
+    padding: 20px;
+  }
+}
+
+.btn-block {
+  background-color: #0b2f82;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.btn-block:hover {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
