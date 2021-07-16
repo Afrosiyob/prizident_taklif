@@ -25,6 +25,8 @@ body {
 }
 
 .navbar-brand {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +56,7 @@ body {
 }
 
 .footer {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,6 +74,20 @@ body {
 
 .footer p {
   color: white;
+}
+
+.navbar-link {
+  width: 100%;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+@media all and (max-width: 768px) {
+  .navbar-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .main-section {
@@ -111,5 +128,16 @@ body {
 
 .btn-block:hover {
   color: white;
+}
+
+.testimonial-card {
+  margin: 88px 0;
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .testimonial-card {
+    margin: 50px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
