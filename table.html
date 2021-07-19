@@ -24,6 +24,110 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Default form register -->
+                    <form class="text-center    form-section " action="#!">
+
+
+
+                        <p class="h4 mb-4">Taklif</p>
+
+                        <div class="form-row mb-4">
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <!-- Familiya -->
+                                <input type="text" id="familiya" class="form-control" placeholder="Familiya">
+                            </div>
+                            <div class="col-md-6 col-sm-12 ">
+                                <!-- Ism -->
+                                <input type="text" id="ism" class="form-control" placeholder="Ism">
+                            </div>
+                        </div>
+
+
+                        <div class="form-row mb-4">
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <!-- Otasining ismi -->
+                                <input type="text" id="otasining_ismi" class="form-control" placeholder="Otasining ismi">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+
+                                <!-- Phone  -->
+                                <input type="text" id="phone" class="form-control" placeholder="Phone number">
+
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <input type="email" id="email" class="form-control mb-4" placeholder="E-mail">
+
+                        <div class="form-row mb-4">
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <!-- Viloyat -->
+                                <select class="browser-default custom-select">
+                                    <option selected>Viloyat</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-sm-12 ">
+
+                                <!--  Tuman -->
+                                <select class="browser-default custom-select">
+                                    <option selected>Tuman</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <textarea class="form-control rounded-0" placeholder="Taklif" id="taklif" rows="4"></textarea>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <div class="col-md-6  col-sm-12">
+                                <!-- Sign up button -->
+                                <button class="btn  my-4 btn-block" type="submit">Save</button>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <button class="btn my-4  btn-outline-indigo waves-effect" data-dismiss="modal">
+                                    Cansel
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                    <!-- Default form register -->
+                </div>
+                <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" >Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
 
     <nav class="navbar shadow-0 animated fadeInDown navbar-light bg-white fixed-top">
         <div class="container">
@@ -42,21 +146,24 @@
     <main class="main-section">
         <div class="container">
             <div class="row animated zoomIn">
-                <div class="col-12 d-flex justify-content-end mb-4">
 
-                    <button class="btn  btn-block my-4"> <i class="fas fa-plus"></i> Add </button>
 
-                </div>
 
                 <div class="col-12">
                     <div class="table-responsive shadow-lg p-4">
-                        <table class="table table-hover">
-                            <thead class="thead-dark">
+                        <button class="btn   btn-block my-4 " data-toggle="modal" data-target="#exampleModal"> <i
+                                class="fas fa-plus"></i> Add </button>
+                        <table class="table table-striped">
+                            <caption>List of offers</caption>
+                            <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col"> <b>#</b> </th>
+                                    <th scope="col"><b>F.I.O</b></th>
+                                    <th scope="col"><b>Phone</b></th>
+                                    <th scope="col"><b>E-mail</b></th>
+                                    <th scope="col"><b>Viloyat</b></th>
+                                    <th scope="col"> <b>Tuman</b> </th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -64,19 +171,30 @@
                                     <th scope="row">1</th>
                                     <td>Mark</td>
                                     <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>Otto</td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm  btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                                        <button type="button" class="btn btn-sm  btn-outline-info">Info</button>
+                                        <button type="button" class="btn btn-sm  btn-outline-danger">Delete</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
                                     <td>Larry</td>
                                     <td>the Bird</td>
-                                    <td>@twitter</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>the Bird</td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm  btn-outline-primary" data-toggle="modal" data-target="#exampleModal"><i
+                                                class="far fa-edit"></i></button>
+                                        <button type="button" class="btn btn-sm  btn-outline-info"><i
+                                                class="fas fa-info"></i></button>
+                                        <button type="button" class="btn btn-sm  btn-outline-danger"> <i
+                                                class="far fa-trash-alt"></i> </button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
